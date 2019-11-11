@@ -1,5 +1,5 @@
 # FlashPythonToolbox
-A few ready-to use python tools
+A few ready-to use python tools for machine learning
 
 ## Logger (to file)
 For every print function, we print a copy to file without changing the whole file. 
