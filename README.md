@@ -1,6 +1,11 @@
 # FlashPythonToolbox
 A few ready-to use python tools for machine learning
 
+## Install
+```
+pip install flashtool
+```
+
 ## Logger (to file)
 For every print function, we print a copy to file without changing the whole file. 
 
