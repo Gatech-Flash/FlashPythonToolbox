@@ -60,5 +60,6 @@ f(12345,5,"xxx@gmail.com")
 def trackpid(pid, checktime=1, receiver_email=None, sender_email="gtflashauto@gmail.com", msg=""):
   ...
 ```
+- `pid`: pid or pids
 - `checktime`: check pid every `checktime` seconds
 - `msg`: additional message
