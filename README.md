@@ -53,8 +53,8 @@ Track your job. Send you an email when it is done.
 - Step 2:
 ```python
 from flashtool import trackpid
-f(12345,5,"xxx@gmail.com")
-f([1357,2468],5,"xxx@gmail.com")
+trackpid(12345,5,"xxx@gmail.com")
+trackpid([1357,2468],5,"xxx@gmail.com")
 ```
 *API*:
 ```python
