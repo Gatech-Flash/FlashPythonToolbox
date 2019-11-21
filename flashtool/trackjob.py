@@ -16,8 +16,9 @@ def trackpid(pid, checktime=1, receiver_email=None, sender_email="gtflashauto@gm
             setup_email(sender_email)
     while len(pid) > 0:
         removed_pid = [id for id in pid if not psutil.pid_exists(id)]
-        if receiver_email is not None:
-            for id in removed_pid:
+        for id in removed_pid:
+            print("Job {} is done".format(str(id)))
+            if receiver_email is not None:
                 send_email(receiver_email=receiver_email, sender_email=sender_email, \
                     subject="Job {} is done".format(str(id)), \
                     message="{}\n Job {} is done".format(msg, str(id)))

@@ -54,6 +54,7 @@ Step 2:
 ```python
 from flashtool import trackpid
 f(12345,5,"xxx@gmail.com")
+f([1357,2468],5,"xxx@gmail.com")
 ```
 *API*:
 ```python
