@@ -3,7 +3,16 @@ from email.mime.text import MIMEText
 import json
 import os
 
-def setupemail(email):
+
+def checkemail_exists(email):
+    try:
+        with open(os.path.expanduser('~/.flashtool.email.password'), 'r') as file:
+            pwDict = json.load(file)
+    except:
+        return False
+    return email in pwDict.keys()
+
+def setup_email(email):
     password = input("Type your password and press enter will be saved in '~/.flashtool.email.password':")
     try:
         with open(os.path.expanduser('~/.flashtool.email.password'), 'r') as file:
