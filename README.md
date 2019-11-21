@@ -57,6 +57,8 @@ f(12345,5,"xxx@gmail.com")
 ```
 *API*:
 ```python
-def trackpid(pid, checktime=1, receiver_email=None, sender_email="gtflashauto@gmail.com", msg="")
+def trackpid(pid, checktime=1, receiver_email=None, sender_email="gtflashauto@gmail.com", msg=""):
+  ...
 ```
 - `checktime`: check pid every `checktime` seconds
+- `msg`: additional message
