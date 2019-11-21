@@ -49,8 +49,8 @@ send_email(receiver_email="xxx@gmail.com", subject="Hi", message="first email")
 Track your job. Send you an email when it is done.
 
 **Tracking by PID**
-Step 1: find your job pid by `ps`, e.g., `ps aux | grep python`
-Step 2:
+- Step 1: find your job pid by `ps`, e.g., `ps aux | grep python`
+- Step 2:
 ```python
 from flashtool import trackpid
 f(12345,5,"xxx@gmail.com")
