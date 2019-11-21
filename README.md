@@ -52,7 +52,7 @@ Track your job. Send you an email when it is done.
 Step 1: find your job pid by `ps`, e.g., `ps aux | grep python`
 Step 2:
 ```python
-from flashtool import checkpid
+from flashtool import trackpid
 f(12345,5,"xxx@gmail.com")
 ```
 *API*:
