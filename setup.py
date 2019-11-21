@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="flashtool",
-    version="0.0.2",
+    version="0.0.3",
     author="Haoming Jiang",
     author_email="jianghm.ustc@gmail.com",
     description="A few ready-to use python tools for machine learning",
