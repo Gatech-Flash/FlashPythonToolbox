@@ -36,7 +36,8 @@ def send_email(port = 587,password = None,
         smtp_server="smtp.gmail.com",
         receiver_email = None,
         subject="Subject",
-        message="Hello! "):
+        message="Hello! ",
+        attachment=None):
     ...
 
 # Example
