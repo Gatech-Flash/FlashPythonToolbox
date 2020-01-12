@@ -65,3 +65,12 @@ def trackpid(pid, checktime=1, receiver_email=None, sender_email="gtflashauto@gm
 - `pid`: pid or pids
 - `checktime`: check pid every `checktime` seconds
 - `msg`: additional message
+
+## Pytorch Utils
+
+### GPU Usage
+
+```python
+import flashtool as flash; flash.check_torch_memory(brief=True)
+```
+- `brief`: short message (default: Flase)
