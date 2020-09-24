@@ -74,3 +74,15 @@ def trackpid(pid, checktime=1, receiver_email=None, sender_email="gtflashauto@gm
 import flashtool as flash; flash.check_torch_memory(brief=True)
 ```
 - `brief`: short message (default: Flase)
+
+
+## Auto Script Running
+
+```python
+import flashtool as flash;
+basescript='script/run.sh'
+config={
+    "DATA": "subset5"
+}
+flash.run_script(basescript, config)
+```
