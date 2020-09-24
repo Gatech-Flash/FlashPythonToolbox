@@ -14,16 +14,17 @@ def replace(script, key, value):
 
 
 def run_script(basescript, replace_dict={}):
-    with open(basescript, mode="r") as f:
-        _script = f.read()
     print("==================BEGIN===================")
     try:
+        with open(basescript, mode="r") as f:
+            _script = f.read()
         for k, v in replace_dict.items():
             _script = replace(_script, k, v)
         print("cwd: ", os.path.abspath("."))
-        subprocess.run(_script, shell=True, cwd=os.path.abspath("."))
+        subprocess.run([_script, basescript], shell=True, cwd=os.path.abspath("."))
     except:
         print("==================FAILED==================")
+        print(basescript)
         print(replace_dict)
     print("====================END===================")
     print("\n\n")
