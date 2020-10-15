@@ -86,3 +86,37 @@ config={
 }
 flash.run_script(basescript, config)
 ```
+
+## Profile Timing Line by Line 
+
+```python
+
+from flashtool import line_time_profiler 
+
+@line_time_profiler()
+def f(n=1000):
+    a = [1 for _ in range(n)]
+    b = sum(a)
+
+f()
+f(10000)
+
+class C:
+    @line_time_profiler()
+    def f(self, n=1000):
+        a = [1 for _ in range(n)]
+        b = sum(a)
+
+ins = C()
+ins.f()
+ins.f(10000)
+
+
+@line_time_profiler(stop=True)
+def f(n=1000):
+    a = [1 for _ in range(n)]
+    b = sum(a)
+
+f()
+
+```
